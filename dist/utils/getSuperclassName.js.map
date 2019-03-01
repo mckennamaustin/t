@@ -1,0 +1,1 @@
+{"version":3,"file":"getSuperclassName.js","sourceRoot":"","sources":["../../src/app/utils/getSuperclassName.ts"],"names":[],"mappings":"AAAA,eAAe,CAAC,MAAc,EAAE,EAAE;IAChC,OAAO,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,CAAC,CAAC,WAAW,CAAC,IAAI,CAAC;AAC/E,CAAC,CAAC"}

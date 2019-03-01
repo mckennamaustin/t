@@ -1,0 +1,69 @@
+{
+  "name": "sage-tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./sage-tour.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-syntax-dynamic-import"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinevov/sage-tour.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run webpack && cp dist/bundle.js ../dist/public/ && cp dist/*.css ../dist/public/",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "watch": "npm run webpack -- --env.mode development --watch",
+    "prod": "npm run webpack -- --env.mode production",
+    "dev-build": "npm run webpack -- --env.mode development",
+    "dev": "npm run webpack-dev-server -- --env.mode development --watch --hot --host 0.0.0.0 --port 3000",
+    "prod:debug": "npm run debug -- --env.mode production",
+    "dev:debug": "npm run debug -- --env.mode development",
+    "prod:analyze": "npm run prod -- --env.presets analyze"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.1.0",
+    "@types/three": "^0.92.24",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "three": "^0.98.0",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-stage-0": "^6.24.1",
+    "raw-loader": "^0.5.1",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  },
+  "author": "",
+  "license": "ISC"
+}

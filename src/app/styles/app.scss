@@ -1,0 +1,211 @@
+.ev-design-studio {
+  width: 1535px;
+  height: 614px;
+  position: relative;
+
+  .ev-toolbar {
+    position: absolute;
+    top: 614px;
+    width: 614px;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(2, 50px);
+    background-color: rgb(50, 54, 57);
+
+    .ev-tool {
+      background-color: rgb(60, 64, 67);
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      img {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+      }
+
+      &:hover {
+        background-color: rgb(60, 64, 117);
+      }
+
+      &.selected {
+        background-color: #339af0;
+      }
+    }
+
+    .ev-floor-switch {
+      grid-column: 1/2;
+      grid-row: 1/3;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 0px;
+
+      background-color: transparent;
+
+      img {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+      }
+
+      span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        color: white;
+        font-size: 1.2rem;
+        flex-grow: 1;
+
+        text-align: center;
+      }
+    }
+  }
+  &,
+  * {
+    user-select: none;
+    background-color: white;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    * {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+    }
+  }
+
+  .ev-detached-panoramas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .ev-tour-preview {
+    width: 614px;
+    height: 614px;
+    left: 921px;
+    top: 0px;
+
+    position: absolute;
+
+    .ev-tour-preview-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ev-rotation-input {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      background-color: rgb(50, 54, 57);
+      padding: 5px 5px;
+
+      img {
+        background-color: transparent;
+        height: 15px;
+      }
+      input {
+        flex-grow: 1;
+        width: 50px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border: 1px solid white;
+        margin-left: 5px;
+        border-radius: 2px;
+        color: white;
+      }
+    }
+  }
+  .ev-drop-bay {
+    width: 307px;
+    height: 614px;
+    left: 614px;
+    top: 0px;
+    position: relative;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-sizing: content-box;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  .ev-fpv {
+    .ev-message-bar {
+      width: 614px;
+      position: absolute;
+      position: absolute;
+      top: 0px;
+      background-color: transparent;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(77, 77, 77, 0.7),
+        rgba(77, 77, 77, 0)
+      );
+    }
+    position: absolute;
+    width: 614px;
+    height: 614px;
+    left: 0px;
+    top: 0px;
+
+    .ev-fpv-container {
+      user-select: none;
+      background-color: white;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+      * {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+      }
+    }
+  }
+
+  .ev-panorama {
+    position: absolute;
+    transition: top 500ms ease-in-out;
+    background-color: gainsboro;
+    height: 75px;
+    min-height: 75px;
+    width: 275px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    cursor: grab;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+    span {
+      background-color: transparent;
+      font-size: 1rem;
+    }
+  }
+}
